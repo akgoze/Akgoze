@@ -9,10 +9,10 @@ body {
 	position: absolute;
 	width: auto;
 	display: block;
-	left: 32px;
-	right: 32px;
-	top: 32px;
-	bottom: 32px;
+	left: 1.67vw;
+	right: 1.67vw;
+	top: 1.67vw;
+	bottom: 1.67vw;
 }
 #header {
 	display: flex;
@@ -30,11 +30,11 @@ body {
 	text-align: right;
 }
 .content {
-	margin: 32px;
+	margin: 32px 11.25vw;
 }
 .text {
 	color: #838b91;
-	font-size: 3.81vw;
+	font-size: 3.34vw;
 	font-weight: 100;
 	line-height: 1.345;
 	margin: 0;
@@ -43,12 +43,28 @@ body {
 	}
 	&.hello {
 		color: #ffffff;
-    font-size: 4.3vw;
+    font-size: 3.75vw;
     margin-bottom: 3.83vh;
 	}
 	&.subtext {
-		font-size: 56px;
+		font-size: 2.92vw;
     margin-top: 11.5vh;
 	}
 
+}
+.title-nav {
+	color: #838b91;
+	font-size: 1.25vw;
+	margin: 5vh auto 1.5vh;
+}
+.menu-item {
+	font-size: 1.25vw;
+	font-weight: 500;
+	color: #ffffff;
+	text-decoration: none;
+	margin-right: 1vw;
+	&:hover {
+		text-decoration: underline;
+		text-decoration-color: #838b91;
+	}
 }
