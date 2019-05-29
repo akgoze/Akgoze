@@ -1,0 +1,54 @@
+@import "normalize";
+
+body {
+	font-family: montserrat, sans-serif;
+	background: #202122;
+}
+.container {
+	background: #000000;
+	position: absolute;
+	width: auto;
+	display: block;
+	left: 32px;
+	right: 32px;
+	top: 32px;
+	bottom: 32px;
+}
+#header {
+	display: flex;
+	align-items: center;
+	margin: 32px;
+}
+.logo {
+	background: #202122;
+	width: 72px;
+	height: 54px;
+	padding: 12px 8px;
+}
+.menu {
+	width: 100%;
+	text-align: right;
+}
+.content {
+	margin: 32px;
+}
+.text {
+	color: #838b91;
+	font-size: 3.81vw;
+	font-weight: 100;
+	line-height: 1.345;
+	margin: 0;
+	strong {
+		font-weight: 700;
+	}
+	&.hello {
+		color: #ffffff;
+    font-size: 4.3vw;
+    margin-bottom: 3.83vh;
+	}
+	&.subtext {
+		font-size: 56px;
+    margin-top: 11.5vh;
+	}
+
+}
