@@ -1,8 +1,6 @@
 
 \.vscode/
 
-global\.css
+global\.css\.map
 
 *.map
-
-*.css
