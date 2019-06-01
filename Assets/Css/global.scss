@@ -75,6 +75,35 @@ body {
 	margin: 5vh auto 1.5vh;
 }
 
+@media only screen 
+and (max-device-width : 768px) 
+and (orientation : landscape) {
+	#header {
+    margin-bottom: 24px;
+	} 
+	.text,
+	.text.hello,
+	.text.subtext {
+		float: left;
+		font-size: 24px;
+	}
+	.text.text.subtext {
+    margin-top: 0;
+	}
+	br {
+		display: none;
+	}
+	.title-nav {
+    display: block;
+		clear: both;    
+		font-size: 18px;
+    padding-top: 18px;
+	}
+	.menu-item {
+		font-size: 18px;
+	}
+}
+
 @media only screen and (min-width:768px) {
 	.container {
 		left: 1.67vw;
@@ -97,11 +126,12 @@ body {
 		font-size: 3.34vw;
 		&.hello {
 			font-size: 3.75vw;
-			margin-bottom: 3.83vh;
+			line-height: normal;
+			margin-bottom: 1.83vh;
 		}
 		&.subtext {
 			font-size: 2.92vw;
-			margin-top: 11.5vh;
+			margin-top: 4.5vh;
 		}
 	}
 	.menu-item {

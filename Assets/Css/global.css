@@ -189,7 +189,11 @@ body {
 }
 
 .container {
-  background: #000000;
+  background-color: #000000;
+  background-image: url("../Images/bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
   position: absolute;
   width: auto;
   display: block;
@@ -268,12 +272,40 @@ body {
   margin: 5vh auto 1.5vh;
 }
 
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  #header {
+    margin-bottom: 24px;
+  }
+  .text,
+  .text.hello,
+  .text.subtext {
+    float: left;
+    font-size: 24px;
+  }
+  .text.text.subtext {
+    margin-top: 0;
+  }
+  br {
+    display: none;
+  }
+  .title-nav {
+    display: block;
+    clear: both;
+    font-size: 18px;
+    padding-top: 18px;
+  }
+  .menu-item {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     left: 1.67vw;
     right: 1.67vw;
     top: 1.67vw;
     bottom: 1.67vw;
+    background-size: contain;
   }
   .logo {
     width: 72px;
@@ -290,11 +322,12 @@ body {
   }
   .text.hello {
     font-size: 3.75vw;
-    margin-bottom: 3.83vh;
+    line-height: normal;
+    margin-bottom: 1.83vh;
   }
   .text.subtext {
     font-size: 2.92vw;
-    margin-top: 11.5vh;
+    margin-top: 4.5vh;
   }
   .menu-item {
     font-size: 1.25vw;
