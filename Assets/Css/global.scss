@@ -5,7 +5,13 @@ body {
 	background: #202122;
 }
 .container {
-	background: #000000;
+	background: {
+		color: #000000;
+		image: url("../Images/bg.png");
+		repeat: no-repeat;
+		position: bottom right;
+		size: cover;
+	};
 	position: absolute;
 	width: auto;
 	display: block;
@@ -75,6 +81,7 @@ body {
 		right: 1.67vw;
 		top: 1.67vw;
 		bottom: 1.67vw;
+		background-size: contain;
 	}
 	.logo {
 		width: 72px;
