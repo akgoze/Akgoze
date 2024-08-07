@@ -2,16 +2,16 @@
 
 body {
 	font-family: montserrat, sans-serif;
-	background: #202122;
+	background: #1c1528;
 }
 .container {
 	background: {
-		color: #000000;
+		color: #120c1c;
 		image: url("../Images/bg.png");
 		repeat: no-repeat;
 		position: bottom right;
 		size: cover;
-	};
+	}
 	position: absolute;
 	width: auto;
 	display: block;
@@ -26,7 +26,7 @@ body {
 	margin: 32px 24px;
 }
 .logo {
-	background: #777777;
+	background: #4ed3ad;
 	width: 56px;
 	height: 48px;
 	padding: 12px 8px;
@@ -40,7 +40,7 @@ body {
 	margin: 32px 24px;
 }
 .text {
-	color: #838b91;
+	color: #4ed3ad;
 	font-size: 6vw;
 	font-weight: 100;
 	line-height: 1.6;
@@ -49,38 +49,36 @@ body {
 		font-weight: 700;
 	}
 	&.hello {
-		color: #ffffff;
-    font-size: 7.75vw;
-    margin-bottom: 1.75vh;
+		color: #a0ffe4;
+		font-size: 7.75vw;
+		margin-bottom: 1.75vh;
 	}
-	&.subtext {    
+	&.subtext {
 		font-size: 6vw;
-    margin-top: 2.5vh;
+		margin-top: 2.5vh;
 	}
 }
 .menu-item {
 	margin-right: 1.5vw;
 	font-size: 3.75vw;
 	font-weight: 500;
-	color: #ffffff;
+	color: #a0ffe4;
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
-		text-decoration-color: #838b91;
+		text-decoration-color: #cefff1;
 	}
 }
 .title-nav {
-	color: #838b91;
+	color: #4ed3ad;
 	font-size: 3.75vw;
 	margin: 5vh auto 1.5vh;
 }
 
-@media only screen 
-and (max-device-width : 768px) 
-and (orientation : landscape) {
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
 	#header {
-    margin-bottom: 24px;
-	} 
+		margin-bottom: 24px;
+	}
 	.text,
 	.text.hello,
 	.text.subtext {
@@ -88,23 +86,23 @@ and (orientation : landscape) {
 		font-size: 24px;
 	}
 	.text.text.subtext {
-    margin-top: 0;
+		margin-top: 0;
 	}
 	br {
 		display: none;
 	}
 	.title-nav {
-    display: block;
-		clear: both;    
+		display: block;
+		clear: both;
 		font-size: 18px;
-    padding-top: 18px;
+		padding-top: 18px;
 	}
 	.menu-item {
 		font-size: 18px;
 	}
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
 	.container {
 		left: 1.67vw;
 		right: 1.67vw;
@@ -123,9 +121,9 @@ and (orientation : landscape) {
 		margin: 32px 11.25vw;
 	}
 	.text {
-		font-size: 3.34vw;
+		font-size: 2.7vw;
 		&.hello {
-			font-size: 3.75vw;
+			font-size: 3vw;
 			line-height: normal;
 			margin-bottom: 1.83vh;
 		}
@@ -139,7 +137,7 @@ and (orientation : landscape) {
 		margin-right: 1vw;
 	}
 	.title-nav {
-    font-size: 1.25vw;
-    margin: 5vh auto 1.5vh;
+		font-size: 1.25vw;
+		margin: 5vh auto 1.5vh;
 	}
 }
